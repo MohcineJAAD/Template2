@@ -15,7 +15,6 @@ ul {
 }
 body {
     font-family: "Open Sans", serif;
-    background-color: #000;
 }
 .container {
     padding: 0 15px;
@@ -39,6 +38,62 @@ body {
         width: 1170px;
     }
 }
+/* Start Component */
+.section {
+    padding: 100px;
+}
+.section .main-heading {
+    text-align: center;
+}
+.section .main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+.section .main-heading h2::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    bottom: -30px;
+}
+.section .main-heading h2::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    bottom: -38px;
+    background-color: white;
+}
+.section .main-heading p {
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+}
+/* End Component */
 /* Header */
 header {
     position: absolute;
@@ -138,6 +193,7 @@ header .form i {
     right: 0;
 }
 /* Header */
+/* Start Landing */
 .landing {
     min-height: 100vh;
     background-image: url('../images/landing.jpg');
@@ -237,3 +293,4 @@ header .form i {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+/* End Landing */
